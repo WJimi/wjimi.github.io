@@ -50,6 +50,15 @@ export const friendsConfig: FriendLink[] = [
 		weight: 8,
 		enabled: false,
 	},
+	{
+		title: "Rainbow",
+		imgurl: "/favicon/Rainbow.png",
+		desc: "pwn手 | 二进制安全 | 漏洞挖掘",
+		siteurl: "https://rainbow-blog-ubaue6c9.edgeone.cool/",
+		tags: ["Friend"],
+		weight: 7,
+		enabled: true,
+	},
 ];
 
 // 获取启用的友链并进行排序
