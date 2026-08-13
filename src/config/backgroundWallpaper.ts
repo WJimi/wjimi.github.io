@@ -73,17 +73,25 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 			// 是否启用主页横幅文字
 			enable: true,
 			// 主页横幅主标题
-			title: "Peace",
+			title: "WJimi",
 			// 主页横幅主标题字体大小
 			titleSize: "4.5rem",
 			// 主页横幅副标题
 			subtitle: [
-				"In Reddened Chrysalis, I Once Rest",
-				"From Shattered Sky, I Free Fall",
-				"Amidst Silenced Stars, I Deep Sleep",
-				"Upon Lighted Fyrefly, I Soon Gaze",
-				"From Undreamt Night, I Thence Shine",
-				"In Finalized Morrow, I Full Bloom",
+				"Lovely Firefly",
+				//可爱的萤火虫，我曾闪耀,
+				"In Reddened Chrysalis, I Once Rest 在泛红的蛹中,我曾休憩",
+				//在泛红的蛹中，我曾休憩,
+				"From Shattered Sky, I Free Fall 从破碎的天空中,我自由坠落",
+				//从破碎的天空中，我自由坠落,
+				"Amidst Silenced Stars, I Deep Sleep 在沉默的星辰中,我深度沉睡",
+				//在沉默的星辰中，我深度沉睡,
+				"Upon Lighted Fyrefly, I Soon Gaze 在点亮的萤火虫上,我即刻凝视",
+				//在点亮的萤火虫上，我即刻凝视,
+				"From Undreamt Night, I Thence Shine 从未梦见的夜晚中,我从此闪耀",
+				//从未梦见的夜晚中，我从此闪耀,
+				"In Finalized Morrow, I Full Bloom 在既定的明日里,我尽情绽放",
+				//在既定的明日里，我尽情绽放,
 			],
 			// 主页横幅副标题字体大小
 			subtitleSize: "1.5rem",
@@ -93,7 +101,7 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 				// 打字机关闭 → 每次刷新随机显示一条副标题
 				enable: true,
 				// 打字速度（毫秒）
-				speed: 100,
+				speed: 90,
 				// 删除速度（毫秒）
 				deleteSpeed: 50,
 				// 完全显示后的暂停时间（毫秒）

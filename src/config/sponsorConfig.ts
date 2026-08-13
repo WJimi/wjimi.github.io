@@ -12,13 +12,13 @@ export const sponsorConfig: SponsorConfig = {
 		"您的打赏将用于服务器维护、内容创作和功能开发，帮助我持续提供优质内容。",
 
 	// 是否显示打赏者列表
-	showSponsorsList: true,
+	showSponsorsList: false,
 
 	// 是否显示评论区，需要先在commentConfig.ts启用评论系统
-	showComment: true,
+	showComment: false,
 
 	// 是否在文章详情页底部显示打赏按钮
-	showButtonInPost: true,
+	showButtonInPost: false,
 
 	// 打赏方式列表
 	methods: [
@@ -34,7 +34,7 @@ export const sponsorConfig: SponsorConfig = {
 		{
 			name: "微信",
 			icon: "fa7-brands:weixin",
-			qrCode: "/assets/images/sponsor/wechat.png",
+			qrCode: "/assets/images/sponsor/min_wechat.png",
 			link: "",
 			description: "使用 微信 扫码打赏",
 			enabled: true,
