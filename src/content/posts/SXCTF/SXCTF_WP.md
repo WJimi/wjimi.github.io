@@ -554,8 +554,6 @@ Bot 执行后，获得 counselor 的归档数据：
 [{"id":1003,"username":"辅导员值班本","content":"【私密归档】2026 迎新留言墙应急口令：SXCTF{D0oOM_XSS_1s_ez_right?cba853a301dd}","is_private":true,"status":"archived","timestamp":"2026-06-18 22:10:00"}]
 ```
 
-### Flag
-
 SXCTF{D0oOM_XSS_1s_ez_right?cba853a301dd}
 
 ## JWT
