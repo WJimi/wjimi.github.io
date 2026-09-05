@@ -11,7 +11,6 @@ category: SQL
 draft: false
 ---
 
-[TOC]
 # day01_mysql入门
 
 ## 一.SQL概念
