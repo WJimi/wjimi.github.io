@@ -1,7 +1,7 @@
 ---
 title: CS2控制台指令
 published: 2026-08-14
-description: 该星球第一梯队的竞技 FPS，CS 早已不只是一个热门游戏，更像是一项长久运行的数字竞技项目。本文整理常用 CS2 控制台指令，从基础设置到投掷物练习。
+description: 部分指令仅在开启作弊模式下可用，部分指令仅在本地服务器中可用。
 image: ../images/cs2_260814.jpg
 tags: [游戏理解,CS2]
 category: GAME

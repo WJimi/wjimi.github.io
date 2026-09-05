@@ -33,15 +33,6 @@ export const friendsConfig: FriendLink[] = [
 		enabled: false, // 是否启用
 	},
 	{
-		title: "Firefly Docs",
-		imgurl: "https://docs-firefly.cuteleaf.cn/logo.png",
-		desc: "Firefly主题模板文档",
-		siteurl: "https://docs-firefly.cuteleaf.cn",
-		tags: ["Docs"],
-		weight: 9,
-		enabled: false,
-	},
-	{
 		title: "Astro",
 		imgurl: "https://avatars.githubusercontent.com/u/44914786?v=4&s=640",
 		desc: "The web framework for content-driven websites. ⭐️ Star to support our work!",
@@ -59,6 +50,7 @@ export const friendsConfig: FriendLink[] = [
 		weight: 7,
 		enabled: true,
 	},
+	
 ];
 
 // 获取启用的友链并进行排序
