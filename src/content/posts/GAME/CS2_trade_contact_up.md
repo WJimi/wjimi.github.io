@@ -37,8 +37,7 @@ draft: false
     
 - 5 个 StatTrak™ 隐蔽级皮肤，可以产出 StatTrak™ 刀具
     
-
-![[品质阶梯.png]]
+![](品质阶梯.png)
 
 ---
 
@@ -48,9 +47,9 @@ draft: false
 
 最大变化：
 
-隐蔽级皮肤也可以参与汰换
+隐秘级皮肤也可以参与汰换
 
-这让部分隐蔽级皮肤需求快速增加
+这让部分隐秘级皮肤需求快速增加
 
 大量玩家开始寻找合约投入品
 
@@ -69,7 +68,7 @@ draft: false
 
 ## **刀具与手套汰换**
 
-![[Knife-Glove-Trade-Ups.jpg]]
+![](Knife-Glove-Trade-Ups.jpg)
 
 刀具和手套汰换需要：
 
@@ -135,7 +134,7 @@ draft: false
 
 ## **如何计算产出磨损值**
 
-![[How-Output-Float-Is-Calculated.jpg]]
+![](How-Output-Float-Is-Calculated.jpg)
 
 磨损值（Float）是汰换合约中最重要的因素之一
 
