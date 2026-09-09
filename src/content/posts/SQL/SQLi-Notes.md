@@ -1,14 +1,12 @@
 ---
-title: SQLi-Notes
+title: SQLi-笔记
 published: 2026-09-05
 description: A comprehensive guide to SQL injection techniques, including blind SQL injection, error-based injection, and methods for extracting database information.
-
-tags: [
-  SQL,
-  MySQL,
-  web安全,
-  SQLi
-]
+tags:
+  - SQL
+  - MySQL
+  - web安全
+  - SQLi
 category: SQL
 draft: false
 ---

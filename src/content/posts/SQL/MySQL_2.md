@@ -1,12 +1,10 @@
 ---
-title: MySQL_advanced
+title: MySQL_进阶
 published: 2026-09-05
-description: An advanced guide to MySQL, focusing on constraints, queries, and data manipulation techniques for effective database management.   
-
-tags: [
-  SQL,
-  MySQL
-]
+description: An advanced guide to MySQL, focusing on constraints, queries, and data manipulation techniques for effective database management.
+tags:
+  - SQL
+  - MySQL
 category: SQL
 draft: false
 ---

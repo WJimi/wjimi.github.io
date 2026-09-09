@@ -1,12 +1,10 @@
 ---
-title: MySQL_beginner
+title: MySQL_入门
 published: 2026-09-05
 description: A beginner's guide to MySQL, covering basic concepts, database operations, and table management.
-
-tags: [
-  SQL,
-  MySQL
-]
+tags:
+  - SQL
+  - MySQL
 category: SQL
 draft: false
 ---

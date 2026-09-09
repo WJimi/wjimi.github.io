@@ -1,13 +1,11 @@
 ---
-title: ASCII MySQL
+title: 盲注与ASCII码
 published: 2026-09-05
 description: Understanding how ASCII values are used in MySQL for string comparisons and data extraction.
-
-tags: [
-  SQL,
-  ASCII,
-  MySQL
-]
+tags:
+  - SQL
+  - ASCII
+  - MySQL
 category: SQL
 draft: false
 ---
@@ -37,6 +35,7 @@ draft: false
 ---
 
 ![可控制字符](image-1.png)
+
 ---
 
 所以，脚本能爆出：

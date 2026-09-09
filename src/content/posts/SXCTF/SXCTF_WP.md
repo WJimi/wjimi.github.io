@@ -1,9 +1,11 @@
 ---
-title: SXCTF WP
+title: SXCTF WP比赛题解
 published: 2026-08-11
 description: SXCTF四校联合友谊赛
-
-tags: [SXCTF, misc,web]
+tags:
+  - SXCTF
+  - misc
+  - web
 category: WP
 draft: false
 ---

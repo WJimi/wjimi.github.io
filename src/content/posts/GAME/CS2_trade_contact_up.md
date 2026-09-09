@@ -3,7 +3,7 @@ title: CS2_汰换
 published: 2026-09-07
 description: 谁是CS2炼金大师
 tags:
-  - 算法与数据结构
+  - 游戏理解
 category: GAME
 draft: false
 ---
