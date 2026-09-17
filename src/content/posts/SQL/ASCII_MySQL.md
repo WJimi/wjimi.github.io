@@ -1,7 +1,7 @@
 ---
 title: 盲注与ASCII码
 published: 2026-09-05
-description: Understanding how ASCII values are used in MySQL for string comparisons and data extraction.
+description: 理解 ASCII 值如何在 MySQL 中用于字符串比较和数据提取
 tags:
   - SQL
   - ASCII
@@ -9,14 +9,14 @@ tags:
 category: SQL
 draft: false
 ---
-
+Understanding how ASCII values are used in MySQL for string comparisons and data extraction.
 ### 字符串为什么有时转成 ASCII 数字？
 
 布尔盲注的核心是比较大小。字符串之间比较大小限制很多，无法精确猜解。而 **ASCII 数字是纯数值**，可以用 `>`、`<`、`=` 做精确二分法。
 
 ### 爆出的不只是大小写字母和数字
 
-我们的脚本里用了 `range(32, 127)`，这个范围涵盖了所有 **可打印 ASCII 字符**：
+脚本里的 `range(32, 127)`，这个范围涵盖了所有 **可打印 ASCII 字符**：
 
 | ASCII 范围 | 内容    | 示例                                                                        |
 | -------- | ----- | ------------------------------------------------------------------------- |
