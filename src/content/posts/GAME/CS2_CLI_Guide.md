@@ -2,13 +2,15 @@
 title: CS2控制台指令
 published: 2026-08-14
 description: 部分指令仅在开启作弊模式下可用，部分指令仅在本地服务器中可用。
-image: ../images/cs2_260814.jpg
-tags: [游戏理解,CS2]
+tags:
+  - 游戏理解
+  - CS2
 category: GAME
 draft: false
 ---
 
 「像笨蛋一样」热爱着CS
+
 <iframe width="100%" height="468" src="//player.bilibili.com/player.html?bvid=BV1WqVA6QEkv&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" &autoplay=0> </iframe>
 
 > 该星球最具代表性的竞技 FPS 游戏之一，Counter-Strike 系列已经走过了二十余年的发展历程。从早期的 Counter-Strike，到 CS:GO，再到如今的 Counter-Strike 2，它已经很难再被简单地定义为一款普通的热门游戏，而更像是一项长期运行的数字竞技项目。

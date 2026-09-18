@@ -1,7 +1,7 @@
 ---
 title: CS2_汰换
 published: 2026-09-07
-description: 谁是CS2炼金大师
+description: 有利可图的汰换合同
 tags:
   - 游戏理解
 category: GAME
@@ -37,7 +37,7 @@ draft: false
     
 - 5 个 StatTrak™ 隐秘级皮肤，可以产出 StatTrak™ 刀具
     
-![](品质阶梯.png)
+![](CS2_trade_contact_up.png)
 
 ---
 

