@@ -133,6 +133,6 @@ Firefly 支持在 Markdown、MDX 文章中使用 Obsidian 风格的 Wiki Link �
 
 附件嵌入语法目前不会被转换，会按原文显示：
 
-![[image.png]]
+![[ascii_1.png]]
 
 行内代码和代码块中的 `[[firefly]]` 也不会被转换。

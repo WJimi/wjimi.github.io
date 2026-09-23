@@ -4,6 +4,7 @@ published: 2026-09-07
 description: 有利可图的汰换合同
 tags:
   - 游戏理解
+  - CS2
 category: GAME
 draft: false
 ---

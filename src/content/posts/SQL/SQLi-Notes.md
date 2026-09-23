@@ -3,7 +3,6 @@ title: SQLi-笔记
 published: 2026-09-05
 description: 全面介绍SQL注入技术，包括盲注、报错注入以及提取数据库信息的方法。
 tags:
-  - SQL
   - MySQL
   - web安全
   - SQLi

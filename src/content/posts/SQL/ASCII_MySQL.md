@@ -30,11 +30,11 @@ Understanding how ASCII values are used in MySQL for string comparisons and data
 | 123-126  | 最后的符号 | `{`,  \| , `}`, `~`                                                       |
 
 ---
-![可显示字符](image.png)
+![可显示字符](ascii_1.png)
 
 ---
 
-![可控制字符](image-1.png)
+![可控制字符](ascii_2.png)
 
 ---
 

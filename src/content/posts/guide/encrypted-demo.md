@@ -25,7 +25,7 @@ draft: true
 
 ## 图片
 
-![Firefly](./images/1.avif)
+![Firefly](../images/1.avif)
 
 ## GitHub 仓库卡片
 
