@@ -1,12 +1,14 @@
 ---
-title: 盲注与ASCII码
+title: "盲注与ASCII码"
 published: 2026-09-05
-description: 理解 ASCII 值如何在 MySQL 中用于字符串比较和数据提取
+description: "理解 ASCII 值如何在 MySQL 中用于字符串比较和数据提取"
 tags:
-  - SQL
-  - ASCII
-  - MySQL
-category: SQL
+  - "SQL"
+  - "ASCII"
+  - "MySQL"
+  - "SQL注入"
+category: "02_知识"
+slug: "knowledge-base/02_kownledge/ascii-blind-injection"
 draft: false
 ---
 Understanding how ASCII values are used in MySQL for string comparisons and data extraction.
@@ -29,14 +31,12 @@ Understanding how ASCII values are used in MySQL for string comparisons and data
 | 97-122   | 小写字母  | `a` - `z`                                                                 |
 | 123-126  | 最后的符号 | `{`,  \| , `}`, `~`                                                       |
 
----
-![可显示字符](ascii_1.png)
 
----
+![可显示字符](../../images/sqli-ascii-printable.png)
 
-![可控制字符](ascii_2.png)
 
----
+![可控制字符|684](../../images/sqli-ascii-control.png)
+
 
 所以，脚本能爆出：
 
@@ -58,6 +58,5 @@ for ascii_code in range(32, 127):  # 可打印字符范围
 ```
 
 ### 二分查找爆破数据库
-
 
 

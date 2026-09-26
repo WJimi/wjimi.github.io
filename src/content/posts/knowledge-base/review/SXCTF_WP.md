@@ -7,6 +7,7 @@ tags:
   - misc
   - web
 category: WP
+slug: knowledge-base/review/sxctf-wp
 draft: false
 ---
 
@@ -75,7 +76,7 @@ SXCTF{10ve_exCe1_!!!}
 **解题步骤**
 
 修复二维码，反转，颜色的反转，目标：灰色调整为黑色。
-![Pasted image 20260718112519](../../images/Pasted image 20260718112519.png)
+![修复前的二维码](../../images/image-20260718112519.png)
 
 1. 搜索并打开免费的在线修图网站（例如 [photopea](https://www.photopea.com/#)）。
 2. 把你的二维码图片拖入浏览器中。
@@ -578,9 +579,6 @@ SXCTF{D0oOM_XSS_1s_ez_right?cba853a301dd}
 ![image-20260726141539596](../../images/image-20260726141539596.png)
 
 SXCTF{e4sy_jwt_n0ne_4lg_byp4ss}
-
-
-
 
 
 

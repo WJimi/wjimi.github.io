@@ -5,6 +5,7 @@ description: 计算机最基础的认知
 tags:
   - 主干问题
 category: 01_问题
+slug: knowledge-base/01_questions/core-questions
 draft: false
 ---
 ## 程序是什么？

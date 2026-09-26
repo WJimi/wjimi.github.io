@@ -5,6 +5,7 @@ description: 指导思想纲要
 tags:
   - README
 category: KB
+slug: knowledge-base/readme
 draft: false
 pinned: true
 ---

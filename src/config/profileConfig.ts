@@ -12,7 +12,7 @@ export const profileConfig: ProfileConfig = {
 	name: "WJimi",
 
 	// 个人签名
-	bio: "知识是问题的产物，而不是学习入口。",
+	bio: "知识是问题的产物，而非学习的入口.",
 
 	// 链接配置
 	// 已经预装的图标集：fa7-brands，fa7-regular，fa7-solid，material-symbols，simple-icons
