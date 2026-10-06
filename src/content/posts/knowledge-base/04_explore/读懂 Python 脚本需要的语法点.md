@@ -58,3 +58,19 @@ draft: false
 
 - [[YAML 标量类型推断]]
 - [[Firefly 双链解析规则]]
+
+## 补：buff-trade 里又撞上的几个
+
+2026-09-30 收尾 [[knowledge-base/03_projects/automation/tradeup-material-sourcing|CS2 炼金配方的自动取材]] 时，
+发现它的脚本用了上面没列到的几个语法点。整套练习材料在
+[[knowledge-base/04_explore/how-to-read-a-project|怎么高效读懂一个项目的代码]] 里，这里只补语法：
+
+| 语法点 | 它解决什么问题 | 出现在哪 |
+| --- | --- | --- |
+| `yield`（生成器函数） | 一条条"产出"检查结果，而不是先造一个列表再返回 | `scan.checks()` |
+| `f"{x:.2f}"` / `f"{x:+.0f}%"` | 格式化：保留两位小数、强制带正负号 | 到处都在（金额和百分比） |
+| `X \| None` 类型标注 | 说明"这个值可能是 None"，提醒自己处理空值 | 大量函数签名 |
+| `dict.get(k) or 默认值` | 取不到、或是 0/空串时都用默认值 | `scan.pick_likeable()` |
+| `argparse` 的 `add_argument(..., action="store_true")` | 一个开关型命令行参数 | 所有脚本的 `main()` |
+| `pathlib.Path.glob()` | 按通配符找文件（`lists/*.md`） | `budget.parse_lists()`、`settle.parse()` |
+| `try / except SystemExit` | 接住"我主动抛的退出"，让上层决定是退出还是继续 | `shell.main()` 里到处 |

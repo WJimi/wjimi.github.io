@@ -53,6 +53,12 @@ Firefly 的解析顺序（`src/plugins/remark-wiki-link.js`，前一步命中就
 
 两者不一致，链接点开就是 404。中文标点、空格、大写都会踩到（`frontmatter 会` → `frontmatter-会`，`？` 直接丢掉，`README` → `readme`）。
 
+补一个更准的说法（2026-09-28 查 `remark-wiki-link.js` 后修正）：**链接的 URL 也来自"解析到的目标"**——
+目标自己有 `slug` 就用 slug，没有才退回原始文件名。插件注释原话是
+"URLs are always derived from the resolved post's `entry.id` rather than from the link text"。
+所以 404 只发生在"这篇没写 `slug` 且文件名不是 URL 安全形态"的时候；写了 slug 的笔记，
+链接写成 slug、文件路径还是裸文件名，点开都是同一个页面——**裸名的唯一风险是重名时解析不到**（撞名警告 + 死链）。
+
 修法是在 frontmatter 里声明 `slug:`（ASCII，形如 `knowledge-base/02_kownledge/xxx`）。声明之后两边都用 slug，文件名和标题怎么写都不影响链接，URL 也更干净。
 
 这条是被真实 404 打出来的：四篇中文文件名的笔记全部点不开，加了 slug 之后恢复正常。
