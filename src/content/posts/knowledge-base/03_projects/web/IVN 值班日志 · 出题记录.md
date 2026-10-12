@@ -75,10 +75,10 @@ draft: false
 
 ## 相关问题
 
-- [[knowledge-base/02_kownledge/sqlite-vs-mysql|SQLite 和 MySQL 差在哪]]
-- [[knowledge-base/02_kownledge/forbidden-directory-vs-file|403 的目录里文件为什么还能访问]]
-- [[knowledge-base/02_kownledge/text-encoding-and-garbled-text|乱码是怎么来的]]
-- [[knowledge-base/02_kownledge/which-machine-is-localhost|localhost 指哪台机器]]
+- [[SQLite 和 MySQL 差在哪]]
+- [[403 的目录里文件为什么还能访问]]
+- [[乱码是怎么来的]]
+- [[localhost 指哪台机器]]
 - 如果选手完全不会用目录扫描工具，第一关还有别的进入方式吗？
 
 ## 实践
@@ -104,7 +104,7 @@ draft: false
    `FLAG="${GZCTF_FLAG:-}"; [ -n "$FLAG" ] || FLAG='flag{local_debug_flag}'`。
 2. **`.bak` 在浏览器里显示乱码。**
    `default_type text/plain;` 让文件内联显示而不是下载，但没带 charset，
-   浏览器按 GBK 猜 UTF-8。补 `charset utf-8;`。见 [[knowledge-base/02_kownledge/text-encoding-and-garbled-text|乱码是怎么来的]]。
+   浏览器按 GBK 猜 UTF-8。补 `charset utf-8;`。见 [[乱码是怎么来的]]。
 3. **`docker exec` 进去 `env` 里还能看到 `GZCTF_FLAG`**，别慌，那是 Docker
    容器配置层面的注入，不等于服务进程拿得到。要确认的是 nginx / php-fpm 的
    `/proc/<pid>/environ`——`start.sh` 里先 `unset` 再起服务，这两个才是干净的。
@@ -112,7 +112,7 @@ draft: false
 5. **dirsearch 的扩展名是替换不是追加**，`-e bak` 只会试 `index.bak`，
    要试出 `index.php.bak` 得加 `-f`；gobuster 的 `-x` 是追加式的。
 6. **403 的目录里，文件照样能访问**，这不是漏洞是 nginx 的正常行为。
-   见 [[knowledge-base/02_kownledge/forbidden-directory-vs-file|403 的目录里文件为什么还能访问]]。
+   见 [[403 的目录里文件为什么还能访问]]。
 7. **301 重定向会把平台映射的外部端口弄丢，看起来像题目坏了。**
    请求不带末尾斜杠的目录（`/dev`）时，nginx 默认回的是**绝对地址**的 301：
    主机名取自 `Host` 头（端口被 `$host` 剥掉），端口取自**容器内 nginx 自己监听的 80**

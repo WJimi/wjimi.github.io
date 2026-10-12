@@ -1,11 +1,11 @@
 ---
-title: "为什么脚本写出的 frontmatter 会校验失败？"
+title: 为什么脚本写出的 frontmatter 会校验失败？
 published: 2026-09-25
-description: "手写的 frontmatter 一直没问题，脚本生成的却过不了内容校验"
+description: 手写的 frontmatter 一直没问题，脚本生成的却过不了内容校验
 tags:
-  - "YAML"
-  - "Astro"
-category: "01_问题"
+  - YAML
+  - Astro
+category: 01_问题
 slug: knowledge-base/01_questions/why-generated-frontmatter-fails-validation
 draft: false
 ---

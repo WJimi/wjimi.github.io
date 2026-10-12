@@ -8,14 +8,14 @@ tags:
   - Firefly
 category: 02_知识
 slug: knowledge-base/02_kownledge/yaml-scalar-type-inference
-draft: false
+draft: true
 ---
 
 # YAML 标量类型推断
 
 ## 来源
 
-解决 [[为什么脚本写出的 frontmatter 会校验失败？]] 时产生。
+解决 [[为什么脚本写出的 frontmatter 会校验失败]] 时产生。
 
 ## 它解决的问题
 

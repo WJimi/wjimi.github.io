@@ -61,9 +61,9 @@ draft: false
 
 ## 补：buff-trade 里又撞上的几个
 
-2026-09-30 收尾 [[knowledge-base/03_projects/automation/tradeup-material-sourcing|CS2 炼金配方的自动取材]] 时，
+2026-09-30 收尾 [[CS2 炼金配方的自动取材]] 时，
 发现它的脚本用了上面没列到的几个语法点。整套练习材料在
-[[knowledge-base/04_explore/how-to-read-a-project|怎么高效读懂一个项目的代码]] 里，这里只补语法：
+[[怎么高效读懂一个项目的代码]] 里，这里只补语法：
 
 | 语法点 | 它解决什么问题 | 出现在哪 |
 | --- | --- | --- |

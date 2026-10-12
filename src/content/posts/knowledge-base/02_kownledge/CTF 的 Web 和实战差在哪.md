@@ -1,13 +1,13 @@
 ---
-title: "CTF 的 Web 和实战差在哪"
+title: CTF 的 Web 和实战差在哪
 published: 2026-09-26
-description: "CTF 的 Web 是实战的单项训练：练透了识别与利用，不练判断、授权和沟通"
+description: CTF 的 Web 是实战的单项训练：练透了识别与利用，不练判断、授权和沟通
 tags:
-  - "CTF"
-  - "Web安全"
-  - "渗透测试"
-category: "02_知识"
-slug: "knowledge-base/02_kownledge/ctf-web-vs-real-world"
+  - CTF
+  - Web安全
+  - 渗透测试
+category: 02_知识
+slug: knowledge-base/02_kownledge/ctf-web-vs-real-world
 draft: false
 ---
 
@@ -43,7 +43,7 @@ CTF 的 Web 方向和实际任务，练的是不是同一件事？
 ## 相关问题
 
 - 那"判断哪些重要"这项怎么练？
-- Web 安全的边界在哪 → [[knowledge-base/02_kownledge/web-security-boundary|Web 安全的边界在哪]]
+- Web 安全的边界在哪 → [[Web 安全的边界在哪]]
 
 ## 实践
 

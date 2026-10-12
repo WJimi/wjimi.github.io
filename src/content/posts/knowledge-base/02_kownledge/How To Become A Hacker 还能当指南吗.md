@@ -1,13 +1,13 @@
 ---
-title: "How To Become A Hacker 还能当指南吗"
+title: How To Become A Hacker 还能当指南吗
 published: 2026-09-26
-description: "ESR 那篇讲的是软件黑客、开源建造者，不是安全；今天只剩态度那几条能用"
+description: ESR 那篇讲的是软件黑客、开源建造者，不是安全；今天只剩态度那几条能用
 tags:
-  - "资料评估"
-  - "黑客文化"
-  - "学习方法"
-category: "02_知识"
-slug: "knowledge-base/02_kownledge/how-to-become-a-hacker-today"
+  - 资料评估
+  - 黑客文化
+  - 学习方法
+category: 02_知识
+slug: knowledge-base/02_kownledge/how-to-become-a-hacker-today
 draft: false
 ---
 
@@ -44,7 +44,7 @@ draft: false
 
 ## 相关问题
 
-- 那方向从哪来？→ [[knowledge-base/01_questions/which-direction|我该往哪个方向走？]]
+- 那方向从哪来？→ [[我该往哪个方向走]]
 
 ## 实践
 
@@ -63,7 +63,7 @@ But if you think of cultivating hacker attitudes as just a way to gain acceptanc
 Or, as the following modern Zen poem has it:  
 或者，正如以下现代禅宗诗所表达的那样：
 
-    To follow the path:  
+   To follow the path:  
 沿着这条道路前进：  
     look to the master,  
 仰望大师吧，  

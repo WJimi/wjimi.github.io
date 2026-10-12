@@ -18,7 +18,7 @@ draft: false
 
 拼 BUFF 的筛选链接时撞上的：把筛选条件（磨损区间、价格区间、排序）配好，
 地址栏里确实全都带上了，可这个 URL 直接请求回来却是没有任何筛选结果的页面。
-背景见 [[knowledge-base/03_projects/automation/tradeup-material-sourcing|CS2 炼金配方的自动取材]]。
+背景见 [[CS2 炼金配方的自动取材]]。
 （这篇笔记中途改过一次结论，错的推导过程也留在里面——翻车比正确更值得记。）
 
 ## 它解决的问题
@@ -87,7 +87,7 @@ https://buff.163.com/goods/1115547 ?from=market #tab=selling&min_price=1&min_pai
 
 ## 相关问题
 
-- [[knowledge-base/03_projects/automation/tradeup-material-sourcing|CS2 炼金配方的自动取材]]
+- [[CS2 炼金配方的自动取材]]
 
 ## 实践
 

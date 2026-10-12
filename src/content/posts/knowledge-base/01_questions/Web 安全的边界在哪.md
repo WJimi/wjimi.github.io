@@ -1,13 +1,12 @@
 ---
-title: "Web 安全的边界在哪"
+title: Web 安全的边界在哪
 published: 2026-09-26
-description: "Web 安全的边界按数据从不可信变可信的每一次跨越来切，不是按工具切"
+description: Web 安全的边界按数据从不可信变可信的每一次跨越来切，不是按工具切
 tags:
-  - "Web安全"
-  - "信任边界"
-  - "SQL注入"
-category: "02_知识"
-slug: "knowledge-base/02_kownledge/web-security-boundary"
+  - Web安全
+  - 信任边界
+category: 01_问题
+slug: knowledge-base/01_kownledge/web-security-boundary
 draft: false
 ---
 
@@ -42,7 +41,7 @@ Burp、sqlmap 这些工具做的事，只是把这类判断放大——替你反
 
 ## 相关问题
 
-- 我以后该往哪个方向走？→ [[knowledge-base/01_questions/which-direction|我该往哪个方向走？]]
+- 我以后该往哪个方向走？→ [[我该往哪个方向走]]
 - 找到漏洞之后呢？（利用、影响评估、报告是另一个层次）
 
 ## 实践

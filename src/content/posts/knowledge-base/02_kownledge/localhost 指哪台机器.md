@@ -16,7 +16,7 @@ draft: false
 
 ## 来源
 
-出 [[knowledge-base/03_projects/web/ivn-duty-challenge|IVN 值班日志]] 时，
+出 [[IVN 值班日志 · 出题记录|IVN 值班日志]] 时，
 想用 Kali 虚拟机里的 dirsearch 去扫 Windows 物理机上跑的容器，卡在了地址上：
 「我可以用 kali 扫物理机上的 `http://localhost:8899` 吗？」
 

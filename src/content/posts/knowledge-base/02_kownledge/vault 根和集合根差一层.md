@@ -50,8 +50,8 @@ draft: false
 
 ## 相关问题
 
-- [[knowledge-base/01_questions/why-wiki-links-404|为什么双链会指不到笔记？]]
-- [[knowledge-base/02_kownledge/firefly-wiki-link-resolution|Firefly 双链解析规则]]
+- [[为什么双链会指不到笔记]]
+- [[Firefly 双链解析规则]]
 
 ## 实践
 

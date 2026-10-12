@@ -107,16 +107,16 @@ bot_dont_shoot 1
 禁止开火  
 bot_stop 1  
 禁止移动  
-bot_add(_ct)  
+bot_add(\_ct)  
 添加  
-bot_kick  
+bot\_kick  
 踢出  
-bot_kill  
+bot\_kill  
 击杀
 
-bot_mimic 1  
+bot\_mimic 1  
 电脑玩家模仿模式  
-bot_mimic_yaw_offset 0  
+bot\_mimic\_yaw\_offset 0  
 电脑玩家同步玩家水平方向视角  
 bot_crouch 1  
 电脑玩家蹲下

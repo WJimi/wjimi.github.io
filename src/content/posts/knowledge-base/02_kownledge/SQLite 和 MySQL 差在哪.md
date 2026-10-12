@@ -16,7 +16,7 @@ draft: false
 
 ## 来源
 
-出 [[knowledge-base/03_projects/web/ivn-duty-challenge|IVN 值班日志]] 时，需要一道 SQL 注入题，
+出 [[IVN 值班日志 · 出题记录|IVN 值班日志]] 时，需要一道 SQL 注入题，
 但不想在容器里再跑一个数据库服务。当时我对「用 SQLite 代替 MySQL」这句话完全没有画面。
 
 ## 它解决的问题

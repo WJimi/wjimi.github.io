@@ -1,7 +1,7 @@
 ---
 title: Firefly 双链解析规则
 published: 2026-09-25
-updated: 2026-09-28
+updated: 2026-10-09
 description: 链接目标按 slug、文件路径、裸文件名三步匹配，和 Obsidian 不是一套规则
 tags:
   - Firefly
@@ -9,14 +9,14 @@ tags:
   - 知识管理
 category: 02_知识
 slug: knowledge-base/02_kownledge/firefly-wiki-link-resolution
-draft: false
+draft: true
 ---
 
 # Firefly 双链解析规则
 
 ## 来源
 
-解决 [[为什么双链会指不到笔记？]] 时产生。
+解决 [[为什么双链会指不到笔记]] 时产生。
 
 ## 它解决的问题
 
@@ -25,6 +25,11 @@ draft: false
 ## 当前理解
 
 Obsidian 和 Firefly 是两套独立的解析器，规则不一样，不能拿一方的直觉推另一方。
+
+**知识库里只写一种写法：`[[markdown 文件名]]`**——不带目录、不带扩展名、不带 slug、不带别名。
+框架三步都能匹配，但只有裸文件名两边都认：`[[slug]]` 在 Obsidian 里点不动，
+`[[目录/文件名]]` 要求改 Obsidian 设置、跨目录还会写出框架解析不了的 `../`。
+别名只在显示文字必须和标题不一样时才补（`[[文件名|显示文字]]`）。
 
 Firefly 的解析顺序（`src/plugins/remark-wiki-link.js`，前一步命中就不看后面）：
 
@@ -38,6 +43,7 @@ Firefly 的解析顺序（`src/plugins/remark-wiki-link.js`，前一步命中就
 
 - `slug` 是 Firefly 独有的概念，Obsidian 不读 frontmatter 的 slug，所以按 slug 写的链接在 Obsidian 里点不动。
 - 裸文件名撞名时 Firefly 只警告然后跳过，链接变死链；Obsidian 在自己的 vault 里可能照样点得动。同一句链接两边表现不同，就出在这里。
+- 所以统一写裸文件名，它是唯一"两边都点得动"的写法。代价是文件名成了链接地址：必须在 `src/content/posts/` 里全站唯一，也不能含 `#` `|` `[` `]`（分别会被当成锚点分隔符、别名分隔符和链接括号）。
 - 匹配不到任何文章时 Firefly 仍然生成链接，只是指向不存在的 URL。**没有"悬空链接只是提示"这回事。**
 - 目标开头多写 `posts/` 会被自动去掉，`../` 不行，会按原文显示。
 - `[[目标#标题]]` 是文章内锚点，`[[#标题]]` 是本页锚点，单独成段的 `[[目标]]` 渲染成卡片。
@@ -192,8 +198,10 @@ Obsidian 侧：vault 在 `src/content`，把「附件默认位置」指到 `post
 python3 ~/.codex/skills/learning-system/scripts/check_links.py
 ```
 
-脚本照抄框架的三步解析，报死链、裸文件名撞名和 slug 撞车。权威文档是 `src/content/posts/guide/firefly-wiki-link.md`。
+脚本照抄框架的三步解析，报写法不合规（目标是 slug 或路径）、多余别名、死链、点开 404、文件名撞车和 slug 撞车。权威文档是 `src/content/posts/guide/firefly-wiki-link.md`。
 
-知识库的约定：**每篇笔记都写 slug**，格式 `knowledge-base/<子目录>/<小写短名>`。`new_note.py` 会自动补（文件名 URL 安全时用文件路径）或在需要时强制要求；`check_links.py` 会列出缺 slug 的笔记。`README.md`、`core-questions.md`、`SXCTF_WP.md` 也补上了，取的 slug 就是它们原来的 URL，地址没变。
+知识库的约定：**每篇笔记都写 slug**，格式 `knowledge-base/<子目录>/<小写短名>`。slug 只管页面 URL，不管链接怎么找目标。`new_note.py` 会自动补（文件名 URL 安全时用文件路径）或在需要时强制要求；`check_links.py` 会列出缺 slug 的笔记。`README.md`、`core-questions.md`、`SXCTF_WP.md` 也补上了，取的 slug 就是它们原来的 URL，地址没变。
 
-Obsidian 侧建议：vault 开在 `src/content/posts`，内部链接类型选「基于仓库根目录的绝对路径」，这样写出的路径和框架要的完全一致。本仓库的 `.obsidian` 目前在 `src/content`，写出来会带 `posts/` 前缀，插件能吃掉，所以也能用；但别选「基于当前笔记的相对路径」。
+2026-10-09 起 `new_note.py` 把 title 和文件名拆开：**title 自由**（可以有 `#`、`？`、空格、圆括号），**文件名严格**（标题里的非法字符自动换成全角，`URL 的 # 后面是什么？` 落成 `URL 的 ＃ 后面是什么？.md`），也可以用 `--file` 指定。改文件名等于改链接地址，定下来别动。
+
+Obsidian 侧建议（2026-10-09 修正）：vault 开在 `src/content/posts`，内部链接类型**保持默认的「尽可能简短的形式」**，它写出来正好是 `[[文件名]]`。这里原先建议选「基于仓库根目录的绝对路径」，那是错的：它会写出 `[[目录/文件名|文件名]]`，在 Obsidian 里能点，但目标写成了路径、别名又和文件名一样，两处都违反统一写法，插件还会把那个别名当噪音丢掉。也别选「基于当前笔记的相对路径」——跨目录会生成 `../`，框架解析不了。本仓库的 `.obsidian` 目前在 `src/content`（比 vault 根高一层），短名仍然是文件名，所以能用。
