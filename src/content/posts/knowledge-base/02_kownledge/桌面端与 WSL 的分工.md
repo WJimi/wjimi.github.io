@@ -1,5 +1,6 @@
 ---
-title: "桌面端与 WSL 的分工：哪些该共享、怎么共享"
+title: "桌面端与 WSL 的分工"
+updated: 2026-10-13
 published: 2026-10-09
 description: "桌面端管审查和长任务、WSL 管重活；会话各自独立，真正该共享的是单源文件"
 tags:
@@ -12,7 +13,7 @@ slug: "knowledge-base/02_kownledge/codex-desktop-wsl-split"
 draft: false
 ---
 
-# 桌面端与 WSL 的分工：哪些该共享、怎么共享
+# 桌面端与 WSL 的分工
 
 ## 来源
 

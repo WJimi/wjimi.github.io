@@ -1,5 +1,6 @@
 ---
-title: CTF 的 Web 和实战差在哪
+title: "CTF Web 是实战的单项训练"
+updated: 2026-10-13
 published: 2026-09-26
 description: CTF 的 Web 是实战的单项训练：练透了识别与利用，不练判断、授权和沟通
 tags:
@@ -11,12 +12,14 @@ slug: knowledge-base/02_kownledge/ctf-web-vs-real-world
 draft: false
 ---
 
-# CTF 的 Web 和实战差在哪
+# CTF Web 是实战的单项训练
 
 ## 来源
 
 打 SXCTF、做完 sqli-labs 前 30 关、自己出了 IVN 那道注入题之后，
 一直在问：这些和真实工作到底差多远？
+
+问题本身记在 [[CTF 的 Web 和实战差在哪？]]。
 
 ## 它解决的问题
 

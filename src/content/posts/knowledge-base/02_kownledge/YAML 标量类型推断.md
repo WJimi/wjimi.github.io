@@ -8,7 +8,7 @@ tags:
   - Firefly
 category: 02_知识
 slug: knowledge-base/02_kownledge/yaml-scalar-type-inference
-draft: true
+draft: false
 ---
 
 # YAML 标量类型推断

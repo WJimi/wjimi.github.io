@@ -1,5 +1,6 @@
 ---
-title: "为什么改了 .bashrc 要重开终端"
+title: "shell 启动文件的四种读法"
+updated: 2026-10-13
 published: 2026-10-07
 description: "交互式/非交互式、登录/非登录这四种 shell 各读哪个启动文件；.bashrc 的守卫为什么会让脚本拿不到变量"
 tags:
@@ -12,12 +13,14 @@ slug: "knowledge-base/02_kownledge/why-bashrc-needs-new-terminal"
 draft: false
 ---
 
-# 为什么改了 .bashrc 要重开终端
+# shell 启动文件的四种读法
 
 ## 来源
 
 接着 [[环境变量是进程启动那一刻的复印件]] 产生的问题：为什么把 `export` 写在 `~/.bashrc` 里，
 手敲 `codex` 有密钥，脚本和 IDE 里却拿不到？
+
+问题本身记在 [[为什么改了 .bashrc 要重开终端？]]。
 
 ## 它解决的问题
 

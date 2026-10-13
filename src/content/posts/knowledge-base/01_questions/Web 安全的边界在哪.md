@@ -6,7 +6,7 @@ tags:
   - Web安全
   - 信任边界
 category: 01_问题
-slug: knowledge-base/01_kownledge/web-security-boundary
+slug: knowledge-base/01_questions/web-security-boundary
 draft: false
 ---
 

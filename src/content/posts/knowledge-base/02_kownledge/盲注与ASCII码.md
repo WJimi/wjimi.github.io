@@ -1,5 +1,6 @@
 ---
 title: "盲注与ASCII码"
+updated: 2026-10-13
 published: 2026-09-05
 description: "理解 ASCII 值如何在 MySQL 中用于字符串比较和数据提取"
 tags:
@@ -11,6 +12,17 @@ category: "02_知识"
 slug: "knowledge-base/02_kownledge/ascii-blind-injection"
 draft: false
 ---
+
+# 盲注与ASCII码
+
+## 来源
+
+早期笔记（2026-09-05）；入口问题现在补成 [[SQL 注入为什么能拿到数据？]]。
+
+## 它解决的问题
+
+没有回显、也拿不到字符串的时候，为什么"把字符变成 ASCII 数字"，就能一个字符一个字符地问出数据。
+
 Understanding how ASCII values are used in MySQL for string comparisons and data extraction.
 ### 字符串为什么有时转成 ASCII 数字？
 

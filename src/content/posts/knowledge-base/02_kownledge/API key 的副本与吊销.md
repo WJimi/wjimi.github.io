@@ -1,5 +1,6 @@
 ---
-title: "API key 到底是什么"
+title: "API key 的副本与吊销"
+updated: 2026-10-13
 published: 2026-10-08
 description: "把 API key 对应成钥匙和锁：本地删除只是换了副本，吊销才是换锁芯；安全 = 副本少 + 能作废"
 tags:
@@ -12,12 +13,14 @@ slug: "knowledge-base/02_kownledge/what-is-an-api-key"
 draft: false
 ---
 
-# API key 到底是什么
+# API key 的副本与吊销
 
 ## 来源
 
 给 Codex 换 DeepSeek 密钥时反复出问题：改了本地文件、也吊销了旧密钥，结果仍然连不上，
 我对"为什么会这样"的第一次推理是错的。
+
+问题本身记在 [[密钥换掉了，为什么还是用旧的？]]。
 
 ## 它解决的问题
 

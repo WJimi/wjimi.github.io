@@ -1,5 +1,6 @@
 ---
 title: "SQLi-笔记"
+updated: 2026-10-13
 published: 2026-09-05
 description: "全面介绍 SQL 注入技术，包括盲注、报错注入以及提取数据库信息的方法。"
 tags:
@@ -11,6 +12,16 @@ category: "02_知识"
 slug: "knowledge-base/02_kownledge/sqli-notes"
 draft: false
 ---
+
+# SQLi-笔记
+
+## 来源
+
+2026-09-05 打 sqli-labs 前 30 关时的手记，当时没写来源；入口问题现在补成 [[SQL 注入为什么能拿到数据？]]。
+
+## 它解决的问题
+
+拿到一个注入点之后，怎么一步步把库名、表名、字段名和数据取出来；没有回显时怎么问出来。
 
 ```sql
 注释符

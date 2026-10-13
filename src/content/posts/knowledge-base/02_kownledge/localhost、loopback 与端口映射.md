@@ -1,5 +1,6 @@
 ---
-title: localhost 指哪台机器
+title: "localhost、loopback 与端口映射"
+updated: 2026-10-13
 published: 2026-09-26
 description: loopback、0.0.0.0、NAT/桥接、端口映射：为什么虚拟机里的 localhost 不是宿主机
 tags:
@@ -12,13 +13,15 @@ slug: knowledge-base/02_kownledge/which-machine-is-localhost
 draft: false
 ---
 
-# localhost 指哪台机器
+# localhost、loopback 与端口映射
 
 ## 来源
 
 出 [[IVN 值班日志 · 出题记录|IVN 值班日志]] 时，
 想用 Kali 虚拟机里的 dirsearch 去扫 Windows 物理机上跑的容器，卡在了地址上：
 「我可以用 kali 扫物理机上的 `http://localhost:8899` 吗？」
+
+问题本身记在 [[localhost 指哪台机器？]]。
 
 ## 它解决的问题
 

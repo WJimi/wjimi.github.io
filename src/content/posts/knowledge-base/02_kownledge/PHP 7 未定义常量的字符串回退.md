@@ -1,23 +1,26 @@
 ---
-title: "PHP 7 未定义常量为什么会变成字符串"
+title: PHP 7 未定义常量的字符串回退
+updated: 2026-10-13
 published: 2026-10-12
-description: "字符白名单只约束你写的文本、不约束运行时的值：未定义常量回退成字符串，配上解码函数就能合成被禁字符"
+description: 字符白名单只约束你写的文本、不约束运行时的值：未定义常量回退成字符串，配上解码函数就能合成被禁字符
 tags:
-  - "PHP"
-  - "Web安全"
-  - "CTF"
-  - "字符过滤"
-category: "02_知识"
-slug: "knowledge-base/02_kownledge/php7-undefined-constant-fallback"
-draft: true
+  - PHP
+  - Web安全
+  - CTF
+  - 字符过滤
+category: 02_知识
+slug: knowledge-base/02_kownledge/php7-undefined-constant-fallback
+draft: false
 ---
 
-# PHP 7 未定义常量为什么会变成字符串
+# PHP 7 未定义常量的字符串回退
 
 ## 来源
 
 做 ctf.show 的「PHP Code Executor」时产生。题目把输入框内容直接送进 `eval()`，
 再用字符白名单卡死几乎所有元字符。卡点很具体：**知道要读 flag.php，但写不出那个点**。
+
+问题本身记在 [[为什么字符白名单挡不住代码执行？]]。
 
 ## 它解决的问题
 

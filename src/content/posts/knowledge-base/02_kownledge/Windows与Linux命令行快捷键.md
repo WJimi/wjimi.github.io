@@ -1,5 +1,6 @@
 ---
 title: "Windows 与 Linux 命令行快捷键"
+updated: 2026-10-13
 published: 2026-10-06
 description: "CMD / PowerShell / Bash 三套命令行里编辑和浏览时最常用的快捷键对照，以及它们为什么不一样"
 tags:
@@ -11,6 +12,16 @@ category: "02_知识"
 slug: "knowledge-base/02_kownledge/windows-linux-cli-shortcuts"
 draft: false
 ---
+
+# Windows 与 Linux 命令行快捷键
+
+## 来源
+
+（未记录；2026-10-06 整理。补上它是为了哪次操作。）
+
+## 它解决的问题
+
+CMD、PowerShell、Bash 三套命令行里编辑和浏览的快捷键各不相同，来回切换时记不住哪套管用。
 
 下面分别列出 **Windows 命令行** 与 **Linux 命令行** 常用的编辑快捷键。  
 需要先说明一点：Windows 下不同命令行环境的编辑能力差异很大——**CMD（命令提示符）** 的快捷键比较古老，而 **PowerShell** 因为内置了 `PSReadLine` 模块，支持大量类似 Linux 的快捷键。Linux 下则通常以 **Bash / Readline** 为准，Zsh 等也高度兼容。

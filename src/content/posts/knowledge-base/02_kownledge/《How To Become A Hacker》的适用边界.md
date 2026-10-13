@@ -1,5 +1,6 @@
 ---
-title: How To Become A Hacker 还能当指南吗
+title: "《How To Become A Hacker》的适用边界"
+updated: 2026-10-13
 published: 2026-09-26
 description: ESR 那篇讲的是软件黑客、开源建造者，不是安全；今天只剩态度那几条能用
 tags:
@@ -11,7 +12,7 @@ slug: knowledge-base/02_kownledge/how-to-become-a-hacker-today
 draft: false
 ---
 
-# How To Become A Hacker 还能当指南吗
+# 《How To Become A Hacker》的适用边界
 
 ## 来源
 
