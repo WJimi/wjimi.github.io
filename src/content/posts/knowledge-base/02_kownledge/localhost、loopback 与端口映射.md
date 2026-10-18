@@ -21,7 +21,7 @@ draft: false
 想用 Kali 虚拟机里的 dirsearch 去扫 Windows 物理机上跑的容器，卡在了地址上：
 「我可以用 kali 扫物理机上的 `http://localhost:8899` 吗？」
 
-问题本身记在 [[localhost 指哪台机器？]]。
+问题本身记在 [[localhost 指哪台机器]]。
 
 ## 它解决的问题
 
