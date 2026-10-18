@@ -1,15 +1,15 @@
 ---
-title: "SQLi-笔记"
+title: SQLi-笔记
 updated: 2026-10-13
 published: 2026-09-05
-description: "全面介绍 SQL 注入技术，包括盲注、报错注入以及提取数据库信息的方法。"
+description: 全面介绍 SQL 注入技术，包括盲注、报错注入以及提取数据库信息的方法。(待更新)
 tags:
-  - "MySQL"
-  - "SQL注入"
-  - "web安全"
-  - "SQLi"
-category: "02_知识"
-slug: "knowledge-base/02_kownledge/sqli-notes"
+  - MySQL
+  - SQL注入
+  - web安全
+  - SQLi
+category: 02_知识
+slug: knowledge-base/02_kownledge/sqli-notes
 draft: false
 ---
 
@@ -96,28 +96,28 @@ SELECT id, name, age FROM users ORDER BY 3;
 比如原查询是 2 列，你要执行 `union select 1,2`，如果列数不匹配，SQL 会直接报错，注入就失败了。
 
 所以 `order by` 是 SQL 注入里，做联合查询之前的「必做步骤」。
+
+
 ### 公开系统表 `information_schema`
 
 > SQL 注入信息收集 —— 公开系统表 `information_schema`
 
 `information_schema` 是MySQL等数据库中的**系统数据库**，用于存储数据库的元数据（数据库名、表名、列名、权限等）**不存储用户业务数据**。
 
+#### `information_schema.schemata`（存储所有库名的表）
 
-#### `information_schema.schemata`
-（存储所有库名的表）
+| `schema_name` |
+| ------------- |
+| 这个库叫什么名字      |
+|               |
 
-| schema_name |
-| ----------- |
-| 这个库叫什么名字    |
-|             |
-
-#### `information_schema.tables`
-（存储所有表的信息的表）
+#### `information_schema.tables`（存储所有表的信息的表）
 
 | `table_name` | `table_schema` |
 | :----------- | :------------- |
 | 这个表叫什么名字     | 这个表属于哪个数据库     |
 |              |                |
+
 #### `information_schema.columns`
 （存储所有列的信息的表）
 
@@ -153,7 +153,7 @@ SELECT 1, group_concat(table_name), 3 FROM information_schema.tables WHERE table
 (select group_concat(列名) from 表名)
 (select group_concat(username,':',password) from users)
 ```
-### MySQL自带函数库
+### MySQL自带的函数库
 #### 测长度`substr('security', 1, 1)`
 `substr(字符串, 起始位置, 截取长度)` 是 MySQL 标准语法。  
 意思是：从第 1 个字符开始，取 1 个字符。  
