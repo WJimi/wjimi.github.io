@@ -1,5 +1,5 @@
 
-<img src="./docs/images/1131.png" width = "350" height = "500" alt="Firefly" align=right />
+<!-- <img src="./docs/images/1131.png" width = "350" height = "500" alt="Firefly" align=right />
 
 <div align="center">
 
@@ -23,7 +23,7 @@
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/CuteLeaf/Firefly)
 [![爱发电打赏](https://img.shields.io/badge/爱发电-打赏作者-ff69b4.svg)](https://ifdian.net/a/cuteleaf)
 
-</div>
+</div> -->
 
 
 ---

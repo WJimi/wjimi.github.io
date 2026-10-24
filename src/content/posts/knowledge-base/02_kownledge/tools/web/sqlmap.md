@@ -283,5 +283,3 @@ sqlmap -u "http://127.0.0.1/pikachu/vul/sqli/sqli_str.php?name=admin" -D pikachu
 - **跨平台吗**：是的，只要有 Python。
 - **怎么安装**：Kali 里用 apt 或从 GitHub 拉取最新源码。
 - **怎么学习**：先手工理解注入原理，再用 sqlmap 在靶场上练习，对比它的探测过程和结果。
-
-你现在有了 dvcs-ripper、dirsearch、ds_store_exp，再加上 sqlmap，Web 方向的基础工具链就基本完整了。下一步就是在 Pikachu 上逐个漏洞类型手工测试，再用 sqlmap 自动化一遍，把原理和工具用法都吃透。如果有任何命令执行报错或疑问，随时贴出来，我帮你分析。

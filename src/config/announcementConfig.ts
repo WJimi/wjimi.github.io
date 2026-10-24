@@ -5,7 +5,7 @@ export const announcementConfig: AnnouncementConfig = {
 	title: "公告",
 
 	// 公告内容
-	content: "欢迎大家来交流学习！也欢迎指导催更！",
+	content: "静珉欢迎你的到来",
 
 	// 是否允许用户关闭公告
 	closable: true,

@@ -5,7 +5,7 @@ description: 部分指令仅在开启作弊模式下可用，部分指令仅在�
 tags:
   - 游戏理解
   - CS2
-category: GAME
+category: game
 draft: false
 ---
 
