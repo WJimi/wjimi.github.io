@@ -5,7 +5,7 @@ description: 目录扫描工具
 tags:
   - web安全
 category: 02_知识
-slug: knowledge-base/02_kownledge/3
+slug: knowledge-base/02_kownledge/dir_scan/dvcs-ripper
 draft: false
 ---
 好的，我们来逐字解析这条命令：
@@ -77,10 +77,6 @@ perl rip-hg.pl -u http://node4.anna.nssctf.cn:28617/.hg/
 - **路径以 `/.hg/` 结尾** → 确保是 HG 泄露的正确入口。
 
 现在你可以将这条命令作为模板，根据题目类型替换脚本名和 URL，快速进行源码泄露类的题目。
-
-------
-
-------
 
 我们从头开始，以“第一性原理”的方式理解 dvcs-ripper 是什么、为什么存在、怎么用。
 

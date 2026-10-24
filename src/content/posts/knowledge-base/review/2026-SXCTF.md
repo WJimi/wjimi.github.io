@@ -5,7 +5,7 @@ description: 26年暑假期间的SXCTF四校联合友谊赛
 tags:
   - SXCTF
   - misc
-  - web
+  - Web
 category: WP
 slug: knowledge-base/review/sxctf-wp
 draft: false
