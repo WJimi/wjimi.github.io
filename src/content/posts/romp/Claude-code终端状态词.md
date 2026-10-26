@@ -1,6 +1,11 @@
 ---
-published: 2026-07-15 02:11:27
-pinned: false
+title: Claude code终端状态词
+published: 2026-10-24
+description: 克劳德·香农
+tags:
+  - fun
+category: romp
+draft: false
 ---
 前言
 
@@ -194,6 +199,5 @@ Claude Code 在干活时，终端会滚动一堆有趣的 …ing 状态词，官
     默认内置：约 187 个
     版本更新会少量增删，但上面列表已覆盖 99% 场景
     终端显示格式：单词…，后面常跟耗时 /token 数
-————————————————
-版权声明：本文为CSDN博主「Aikes902」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+
 原文链接：(https://blog.csdn.net/AikesLs/article/details/161490021)
