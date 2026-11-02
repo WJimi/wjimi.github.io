@@ -3,9 +3,10 @@ title: Claude code终端状态词
 published: 2026-10-24
 description: 克劳德·香农
 tags:
-  - fun
+  - Fun
 category: romp
 draft: false
+slug: knowledge-base/romp/claude-code-loading
 ---
 前言
 

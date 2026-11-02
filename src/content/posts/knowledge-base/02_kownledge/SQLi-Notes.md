@@ -97,7 +97,9 @@ SELECT id, name, age FROM users ORDER BY 3;
 
 所以 `order by` 是 SQL 注入里，做联合查询之前的「必做步骤」。
 
-
+#### 4.升降序
+SQL 默认使用 **ASC** 升序，即从小到大
+ASC 代表升序（Ascending），DESC 代表降序（Descending）
 ### 公开系统表 `information_schema`
 
 > SQL 注入信息收集 —— 公开系统表 `information_schema`

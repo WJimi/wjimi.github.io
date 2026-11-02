@@ -637,7 +637,7 @@ This is [an example](http://example.com/ "Title") inline link.
 
 ---
 
-See my [About](/about/) page for details.
+`See my [About](/about/) page for details.`
 
 ---
 

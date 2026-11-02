@@ -77,7 +77,6 @@ draft: false
 
 - [[为什么 403 的目录里文件还能访问]] —— 第一关"目录禁止访问、文件仍可下载"的机制
 - [[localhost 指哪台机器]] —— 用虚拟机扫物理机上的容器，卡在地址上
-- [[为什么同一个文件在浏览器里乱码、curl 拉回来却正常]] —— 泄露的 `.bak` 源码在浏览器里乱码
 - [[SQL 注入为什么能拿到数据]] —— 第二关要选引擎，顺带问出 SQLite 和 MySQL 的差别
 - 如果选手完全不会用目录扫描工具，第一关还有别的进入方式吗？
 
@@ -104,7 +103,7 @@ draft: false
    `FLAG="${GZCTF_FLAG:-}"; [ -n "$FLAG" ] || FLAG='flag{local_debug_flag}'`。
 2. **`.bak` 在浏览器里显示乱码。**
    `default_type text/plain;` 让文件内联显示而不是下载，但没带 charset，
-   浏览器按 GBK 猜 UTF-8。补 `charset utf-8;`。见 [[文本、字节与字符集]]。
+   浏览器按 GBK 猜 UTF-8。补 `charset utf-8;`。
 3. **`docker exec` 进去 `env` 里还能看到 `GZCTF_FLAG`**，别慌，那是 Docker
    容器配置层面的注入，不等于服务进程拿得到。要确认的是 nginx / php-fpm 的
    `/proc/<pid>/environ`——`start.sh` 里先 `unset` 再起服务，这两个才是干净的。

@@ -4,7 +4,6 @@ published: 2026-08-14
 description: 部分指令仅在开启作弊模式下可用，部分指令仅在本地服务器中可用。
 tags:
   - 游戏理解
-  - CS2
 category: romp
 draft: false
 ---
