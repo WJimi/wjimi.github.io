@@ -1,3 +1,16 @@
+---
+title: "数据库 4 小时冲刺讲义"
+published: 2026-11-02
+description: "数据库期末按分值排优先级的 4 小时冲刺讲义"
+tags:
+  - "数据库"
+  - "SQL"
+  - "复习"
+category: "数据库"
+slug: "knowledge-base/review/database-4h-crash-course"
+draft: false
+---
+
 # 4 小时冲刺讲义（按分值排优先级）
 
 先把时间钉死，别平均用力：

@@ -1,6 +1,7 @@
 ---
 title: 草稿示例
 published: 1970-01-01
+description: "草稿状态的文章示例：draft: true 的文章不会出现在线上站点"
 tags: [Markdown, 博客, 演示]
 category: 文章示例
 draft: true

@@ -1,3 +1,16 @@
+---
+title: "第十届强网杯 Web 题《ezcms》分析"
+published: 2026-11-02
+description: "强网杯 ezcms 的新手向拆解：黑盒观察、知识点与学习路径"
+tags:
+  - "CTF"
+  - "Web"
+  - "Writeup"
+category: "WP"
+slug: "knowledge-base/review/26-qw-cap/ezcms-analysis"
+draft: false
+---
+
 # 第十届强网杯线上赛 Web 题《ezcms》分析
 
 > 面向新手的题目拆解 + 学习指南

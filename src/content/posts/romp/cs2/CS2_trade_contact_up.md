@@ -5,6 +5,7 @@ description: 有利可图的汰换合同
 tags:
   - 游戏理解
 category: romp
+slug: romp/cs2/cs2-trade-contact-up
 draft: false
 ---
 

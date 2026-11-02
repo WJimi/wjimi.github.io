@@ -5,6 +5,7 @@ description: 部分指令仅在开启作弊模式下可用，部分指令仅在�
 tags:
   - 游戏理解
 category: romp
+slug: romp/cs2/cs2-cli-guide
 draft: false
 ---
 

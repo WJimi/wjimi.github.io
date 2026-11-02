@@ -1,3 +1,16 @@
+---
+title: "雪花正倒飞回上一个冬天（crack-a-litter-smile）新手向分析与拆解"
+published: 2026-11-02
+description: "容器题 crack-a-litter-smile 的新手向拆解：先建技能地图，再看实测"
+tags:
+  - "CTF"
+  - "复盘"
+  - "容器"
+category: "WP"
+slug: "knowledge-base/review/26-qw-cap/crack-a-litter-smile"
+draft: false
+---
+
 # 雪花正倒飞回上一个冬天（crack-a-litter-smile）新手向分析与拆解
 
 > 只针对题目提供的这一个容器做授权范围内的分析与教学，不攻击其他目标。

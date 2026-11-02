@@ -1,3 +1,16 @@
+---
+title: "cwp（SimpleBlog）靶场 Writeup"
+published: 2026-11-02
+description: "cwp（SimpleBlog）靶场从信息收集到以 root 读取 flag 的完整 Writeup"
+tags:
+  - "CTF"
+  - "Web"
+  - "Writeup"
+category: "WP"
+slug: "knowledge-base/review/26-qw-cap/simpleblog-cwp-writeup"
+draft: false
+---
+
 # cwp（SimpleBlog）靶场 Writeup
 
 > 本文是独立文档：关键代码、请求、响应、脚本全部内嵌，不依赖任何外部文件。

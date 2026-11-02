@@ -1,3 +1,16 @@
+---
+title: "强网杯 2026 线上赛 ezphp Writeup"
+published: 2026-11-02
+description: "强网杯 ezphp（how 2shell???）的完整 Writeup 与动态 flag 复现"
+tags:
+  - "CTF"
+  - "Web"
+  - "Writeup"
+category: "WP"
+slug: "knowledge-base/review/26-qw-cap/ezphp-writeup"
+draft: false
+---
+
 # 强网杯 2026 线上赛 —— ezphp（how 2shell???）Writeup
 
 ## 0. 题目与结果

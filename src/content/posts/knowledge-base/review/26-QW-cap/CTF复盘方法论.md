@@ -1,3 +1,16 @@
+---
+title: "CTF 复盘方法论"
+published: 2026-11-02
+description: "复盘不是重写 WP：怎么产出决策日志、可复现资产和可迁移的知识卡"
+tags:
+  - "CTF"
+  - "复盘"
+  - "方法论"
+category: "WP"
+slug: "knowledge-base/review/26-qw-cap/ctf-review-methodology"
+draft: false
+---
+
 复盘分两种：**赛后复盘（选手自己）**和**面向新手的复盘（把题变成训练材料）**。容器题的特殊性只影响“现场怎么保存”，不影响复盘的方法论。下面按可执行的流程讲。
 
 ---
