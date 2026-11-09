@@ -1,15 +1,15 @@
 ---
-title: "Windows 与 Linux 命令行快捷键"
+title: Windows 与 Linux 命令行快捷键
 updated: 2026-10-13
 published: 2026-10-06
-description: "CMD / PowerShell / Bash 三套命令行里编辑和浏览时最常用的快捷键对照，以及它们为什么不一样"
+description: CMD / PowerShell / Bash 编辑浏览时常用的快捷键对照，它们又为何不一样
 tags:
-  - "命令行"
-  - "快捷键"
-  - "Windows"
-  - "Linux"
-category: "02_知识"
-slug: "knowledge-base/02_kownledge/windows-linux-cli-shortcuts"
+  - 命令行
+  - 快捷键
+  - Windows
+  - Linux
+category: 02_知识
+slug: knowledge-base/02_kownledge/tips/windows-linux-cli-shortcuts
 draft: false
 ---
 

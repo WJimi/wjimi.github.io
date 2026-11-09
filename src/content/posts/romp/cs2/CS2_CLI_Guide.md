@@ -179,3 +179,6 @@ third(first)person
 然后打开控制台输入：status  
 控制台会弹出一大堆绿数字，在这些数字的上半部分找到“steamid”，将冒号后的一长串代码复制给好友   
 好友打开控制台，输入 connect xxxxx  其中xxxxx即为上述steamid后的代码，即可进入同一个房间
+
+### 一连串命令
+sv_cheats 1;bind alt"noclip";bind n"sv_rethrow_last_grenade";bind 9"toggle host_timescale 1 20";ammo_grenade_limit_total 5;mp_startmoney 99999;mp_maxmoney 99999;mp_buytime 3600;mp_buy_anywhere 1;sv_full_alltalk 1
