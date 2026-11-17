@@ -1,32 +1,3 @@
-
-<!-- <img src="./docs/images/1131.png" width = "350" height = "500" alt="Firefly" align=right />
-
-<div align="center">
-
-# 流萤 / Firefly 
-> 一款清新美观的 Astro 静态博客主题模板
-> 
-> ![Node.js >= 22](https://img.shields.io/badge/node.js-%3E%3D22-brightgreen) 
-![pnpm >= 9](https://img.shields.io/badge/pnpm-%3E%3D9-blue)
-![Astro](https://img.shields.io/badge/Astro-7.2.0-orange)
-![TypeScript](https://img.shields.io/badge/TypeScript-6.0.3-blue)
->
-> [![Stars](https://img.shields.io/github/stars/CuteLeaf/Firefly?style=social)](https://github.com/CuteLeaf/Firefly/stargazers)
-[![Forks](https://img.shields.io/github/forks/CuteLeaf/Firefly?style=social)](https://github.com/CuteLeaf/Firefly/network/members)
-[![Issues](https://img.shields.io/github/issues/CuteLeaf/Firefly)](https://github.com/CuteLeaf/Firefly/issues)
-> 
-> [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z41NQALY)
->
-> **QQ交流群：[1087127207](https://qm.qq.com/q/ZGsFa8qX2G)**
-> 
-> ![GitHub License](https://img.shields.io/github/license/CuteLeaf/Firefly)
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/CuteLeaf/Firefly)
-[![爱发电打赏](https://img.shields.io/badge/爱发电-打赏作者-ff69b4.svg)](https://ifdian.net/a/cuteleaf)
-
-</div> -->
-
-
----
 📖 README：
 **[简体中文](README.md)** | **[繁體中文](docs/README.zh-TW.md)** | **[English](README.en.md)** | **[日本語](docs/README.ja.md)** 
 

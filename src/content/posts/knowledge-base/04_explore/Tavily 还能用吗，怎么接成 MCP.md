@@ -45,9 +45,4 @@ draft: false
 
 ## 我的理解
 
-## 相关问题
 
-- [[DeepSeek 官方脚本会覆盖 Codex 配置]]
-- [[API key 的副本与吊销]]
-
-## 实践

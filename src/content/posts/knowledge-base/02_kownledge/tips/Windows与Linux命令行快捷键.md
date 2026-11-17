@@ -15,8 +15,6 @@ draft: false
 
 # Windows 与 Linux 命令行快捷键
 
-## 解决的问题
-
 CMD、PowerShell、Bash 三套命令行里编辑和浏览的快捷键各不相同，来回切换时记不住哪套管用。
 
 下面分别列出 **Windows 命令行** 与 **Linux 命令行** 常用的编辑快捷键。  
@@ -102,4 +100,54 @@ CMD、PowerShell、Bash 三套命令行里编辑和浏览的快捷键各不相�
 
 > CMD 的编辑能力有限，不支持 `Ctrl+A`、`Ctrl+E` 这类行内跳转。
 
-掌握这些快捷键后，在命令行里编辑长命令、快速修改参数、搜索历史都会顺手很多。想深入某一条快捷键的底层机制（比如 Readline 如何管理编辑缓冲区）？以后再探索吧~
+想深入某一条快捷键的底层机制（比如 Readline 如何管理编辑缓冲区）？以后再探索吧~
+
+在Windows命令行中重启 `explorer.exe`，核心思路是**先强制结束该进程，再重新启动它**。操作本身很简单，但结束进程的瞬间，桌面和任务栏会暂时消失，这属于正常现象。
+
+### 💻 方法一：使用CMD命令提示符（最常用）
+
+**单行命令（推荐）**  
+打开命令提示符（CMD），直接复制并执行下面这行命令：
+
+cmd
+
+taskkill /f /im explorer.exe & start explorer.exe
+
+这条命令会先用 `/f` 参数强制结束资源管理器，紧接着 `start` 命令会重新启动它，桌面会立刻恢复。你也可以用 `&&` 替代 `&`，效果相同。[](https://cloud.tencent.cn/developer/article/2544231)
+
+**分步执行**  
+如果你想看得更清楚，也可以分两步手动操作：
+
+1. **结束进程**：输入 `taskkill /f /im explorer.exe`，按回车。此时桌面会变黑或图标消失。
+    
+2. **重新启动**：立刻输入 `start explorer.exe` 或直接输入 `explorer.exe`，按回车，桌面就会恢复。
+    
+
+### ⚡ 方法二：使用PowerShell（更现代）
+
+如果你习惯用 PowerShell，同样有一行命令可以完成重启：
+
+powershell
+
+Stop-Process -Name explorer -Force; Start-Process explorer
+
+这条命令的作用与CMD版本完全一致，`Stop-Process` 负责强制结束，`Start-Process` 负责重新启动。[](https://www.ninjaone.com/blog/restart-the-explorer-exe-process-in-windows/#1)
+
+### 📁 进阶技巧：创建一键重启的批处理文件
+
+如果你需要频繁重启资源管理器，可以制作一个“一键重启”工具。
+
+1. 在桌面上新建一个文本文档。
+    
+2. 打开文档，输入这行命令：`taskkill /f /im explorer.exe & start explorer.exe`
+    
+3. 保存文件，然后将文件名后缀从 `.txt` 修改为 `.bat`（例如 `重启资源管理器.bat`）。
+    
+4. 以后双击这个 `.bat` 文件，就能自动完成重启操作。
+    
+
+### ⚠️ 重要注意事项
+
+- **需要管理员权限**：如果执行 `taskkill` 时提示“拒绝访问”，说明当前CMD或PowerShell窗口没有管理员权限。你需要右键点击程序，选择“**以管理员身份运行**”后再操作。
+    
+- **已打开的文件窗口会关闭**：重启 `explorer.exe` 会关闭当前所有已打开的文件资源管理器窗口，但**不会关闭你正在运行的应用程序**（如浏览器、Word等）。

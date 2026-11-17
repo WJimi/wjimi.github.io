@@ -1,8 +1,8 @@
 ---
-title: "《How To Become A Hacker》的适用边界"
+title: 《How To Become A Hacker》
 updated: 2026-10-13
 published: 2026-09-26
-description: ESR 那篇讲的是软件黑客、开源建造者，不是安全；今天只剩态度那几条能用
+description: ESR 那篇讲的是软件黑客、开源建造者
 tags:
   - 资料评估
   - 黑客文化
@@ -12,20 +12,10 @@ slug: knowledge-base/02_kownledge/how-to-become-a-hacker-today
 draft: false
 ---
 
-# 《How To Become A Hacker》的适用边界
+# 《How To Become A Hacker》
 
-## 来源
-
-桌面上存着 ESR（埃里克·雷蒙德）那篇《How To Become A Hacker》的中英对照版
-（2020 年 1 月修订，1.52），本来想拿它当"怎么入门"的指南。
-
-## 它解决的问题
-
-这篇 2001 年写的文章，今天还能不能用来指路？
-
-## 当前理解
-
-**不能用它指安全方向的路，它讲的根本不是安全。**
+ 文章作者：ESR（埃里克·雷蒙德）
+（2020 年 1 月修订，1.52）
 
 文章自己写得很硬：会去 break into computers 的那批人被它叫 cracker，还说
 "能破解安全，就像能撬车门一样，不会让你变成汽车工程师"。它定义的 hacker 是
@@ -36,18 +26,13 @@ draft: false
 
 现在还有价值的是"态度"那五条，尤其这三条：
 
-- **无聊和苦差事是邪恶的**——一条学习路线让人痛苦到看不下去，按这条标准，是那条路线错了。
+- **无聊和苦差事是邪恶的**——当一条学习路线让人痛苦到看不下去，按这条标准，是那条路线错了。
 - **任何问题都不该被解决两次**——能固化成脚本和约定的，就别靠记性。
 - **态度不能替代能力**——愿望不是能力，做过的东西才是证据。
 
 最后一条反过来也成立：它也替代不了方向。方向感是做过的事情里长出来的，
 不是先选好的。
 
-## 相关问题
-
-- 那方向从哪来？→ [[我该往哪个方向走]]
-
-## 实践
 
 文章的 Revision History 里躺着一条 2013 年的改动：
 "Why you should not ask me for advice on how to get started."

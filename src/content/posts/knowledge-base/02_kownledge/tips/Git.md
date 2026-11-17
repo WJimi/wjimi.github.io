@@ -2,7 +2,7 @@
 title: Git tips
 updated: 2026-11-08
 published: 2026-11-08
-description: 原谅没用过Git的计算机专业老师
+description: 拜读过林纳斯自传
 tags:
   - 命令行
 category: 02_知识

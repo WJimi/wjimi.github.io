@@ -8,7 +8,6 @@ category: 01_问题
 slug: knowledge-base/01_questions/core-questions
 draft: false
 ---
-
 # 主干问题
 
 长期不变的那几条问题，复盘从这里往下走：主干问题 → 具体问题 → 知识笔记。

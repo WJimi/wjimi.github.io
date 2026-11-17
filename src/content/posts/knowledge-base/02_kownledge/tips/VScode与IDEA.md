@@ -14,11 +14,15 @@ Ctrl + Alt + v 自动生成左边的接受变量
 Ctrl + Alt + l 代码格式化自动规整
 Ctrl + n 广泛搜索
 Ctrl + F12 罗列出所有方法
+
+长按Ctrl + 鼠标悬浮在某些数据类型上可跳转
+
 Alt + Enter 自动修复代码中基础bug
 Alt + ins 快速生成常用代码结构
 Alt + p 让AI生成代码，记得在附近写好注释
 
-javap \*.class 反编译
+javap \*.class 反编译命令
+
 ## VScode
 ### 1. **通用操作快捷键**
 | 功能        | Windows/Linux                        | macOS              |

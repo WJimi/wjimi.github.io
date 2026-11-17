@@ -1001,3 +1001,18 @@ This is another regular paragraph.
   **No Work**
 </div>
 ***
+
+静珉补充
+
+### 利用 Callout（标注块）的预定义颜色
+
+Obsidian 的 Callout 功能自带颜色编码，可用于为**内容块**着色，而非行内文本。
+
+markdown
+
+> [!note] 这是一个蓝色标注
+> 笔记内容。
+> [!warning] 这是一个黄色警告
+> 警告内容。
+
+Obsidian 内置了 `note`（蓝）、`tip`（青）、`warning`（黄）、`danger`（红）等多种类型，每种都有对应的颜色和图标。你还可以通过 CSS 片段自定义 Callout 的颜色。**优点**是原生功能，语义清晰。**缺点**是只能用于块级元素，无法给行内文字单独上色。

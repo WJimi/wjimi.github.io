@@ -9,6 +9,9 @@ category: 01_问题
 slug: knowledge-base/01_questions/web-security-boundary
 draft: false
 ---
+## 状态
+
+待继续
 
 # Web 安全的边界在哪
 
@@ -48,3 +51,8 @@ Burp、sqlmap 这些工具做的事，只是把这类判断放大——替你反
 
 做 sqli-labs 前 30 关、出 IVN 那道 SQLite 注入题、写 SXCTF 题解，用的都是同一件事：
 找到那条"我的输入从数据变成了 SQL 语法"的跨界。
+
+## 待答问题
+
+- 找 3 个越权案例（水平 / 垂直 / 逻辑），各指出是哪一次信任跨越没被检查。
+- 用这张表重看 sqli-labs 里没过的几关，说出每关属于哪一行。
