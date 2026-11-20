@@ -6,7 +6,7 @@ tags:
   - 快捷键
 category: 02_知识
 slug: knowledge-base/02_kownledge/cli-know
-draft: false
+draft: true
 ---
 26-11-04
 打印当前拉取镜像的地址

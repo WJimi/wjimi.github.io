@@ -2,9 +2,12 @@
 title: Obsidian 写博客演示
 published: 2026-11-13
 description: 从本地 Markdown 到 GitHub Pages 的一次完整演示。
-tags: [Obsidian, Markdown, GitHub]
+tags:
+  - Obsidian
+  - Markdown
+  - GitHub
 category: 博客
-slug: obsidian-blog-demo
+slug: guide/obsidian-blog-demo
 draft: true
 ---
 

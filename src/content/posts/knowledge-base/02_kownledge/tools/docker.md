@@ -1,9 +1,9 @@
 ---
 title: docker
 published: 2026-11-05
-description: 命令即是掌控
+description: 镜像容器隔离环境，工具程序安全性
 tags:
-  - 快捷键
+  - dokcer
 category: 02_知识
 slug: knowledge-base/02_kownledge/docker
 draft: false
@@ -290,4 +290,4 @@ docker compose down
 - 只有数据库的 `pgdata` 在 Docker 管理的具名卷里，不在项目目录，备份时用 `pg_dump` 那条命令。
 
 需要我现在执行 `docker builder prune` 帮你腾空间吗？执行前我会先看一眼能回收多少。
-![](HelloWorld)
+![](../../../../../../HelloWorld.png)

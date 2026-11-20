@@ -2,11 +2,15 @@
 title: Firefly 简单使用指南
 published: 1970-01-02
 pinned: false
-description: "如何使用 Firefly 博客模板。"
-image: "./cover.avif"
-tags: ["Firefly", "博客", "Markdown", "指南"]
+description: 如何使用 Firefly 博客模板。
+image: ./cover.avif
+tags:
+  - Firefly
+  - 博客
+  - Markdown
+  - 指南
 category: 博客指南
-slug: guide
+slug: guide/index
 draft: true
 ---
 
