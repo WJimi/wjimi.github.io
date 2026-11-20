@@ -45,32 +45,32 @@ sqlmap 是用 Python 编写的开源 SQL 注入自动化工具，核心能力是
 
 ### 2.2 注入技术控制
 
-| 选项 | 作用 |
-|---|---|
-| `--technique=<LETTERS>` | 指定/排序注入技术，默认 `BEUSTQ`：B 布尔盲注，E 报错，U UNION，S 堆叠，T 时间盲注，Q 带外 |
-| `--dbms=<DBMS>` | 指定后端数据库类型，跳过指纹识别，加快速度 |
-| `--os=<OS>` | 指定目标操作系统 |
-| `--level=<1-5>` | 测试深度，越高覆盖的参数和头越多（默认 1） |
-| `--risk=<1-3>` | 测试风险，越高 payload 越“危险”（默认 1） |
-| `--time-sec=<SEC>` | 时间盲注的延迟秒数（默认 5） |
-| `--union-char=<CHAR>` | 指定 UNION 查询中用于匹配的字符，帮助识别 UNION 注入 |
-| `--prefix=<PREFIX>` / `--suffix=<SUFFIX>` | 自定义 payload 前后缀，用于适配特殊闭合方式 |
-| `--tamper=<SCRIPT>` | 加载 tamper 脚本对 payload 进行变形，试图绕过 WAF |
+| 选项                                        | 作用                                                         |
+| ----------------------------------------- | ---------------------------------------------------------- |
+| `--technique=<LETTERS>`                   | 指定/排序注入技术，默认 `BEUSTQ`：B 布尔盲注，E 报错，U UNION，S 堆叠，T 时间盲注，Q 带外 |
+| `--dbms=<DBMS>`                           | 指定后端数据库类型，跳过指纹识别，加快速度                                      |
+| `--os=<OS>`                               | 指定目标操作系统                                                   |
+| `--level=<1-5>`                           | 测试深度，越高覆盖的参数和头越多（默认 1）                                     |
+| `--risk=<1-3>`                            | 测试风险，越高 payload 越“危险”（默认 1）                                |
+| `--time-sec=<SEC>`                        | 时间盲注的延迟秒数（默认 5）                                            |
+| `--union-char=<CHAR>`                     | 指定 UNION 查询中用于匹配的字符，帮助识别 UNION 注入                          |
+| `--prefix=<PREFIX>` / `--suffix=<SUFFIX>` | 自定义 payload 前后缀，用于适配特殊闭合方式                                 |
+| `--tamper=<SCRIPT>`                       | 加载 tamper 脚本对 payload 进行变形，试图绕过 WAF                        |
 
 ### 2.3 枚举与数据提取
 
-| 选项 | 作用 |
-|---|---|
-| `--dbs` | 列出所有数据库 |
-| `--tables` | 列出指定数据库（配合 `-D`）的表 |
-| `--columns` | 列出指定表（配合 `-D -T`）的列 |
-| `--dump` | 导出指定表或列的数据 |
-| `-D <DB>` / `-T <TABLE>` / `-C <COLS>` | 指定数据库、表、列 |
-| `--schema` | 枚举完整 schema（所有库、表、列） |
-| `--all` | 枚举所有可获取的信息 |
-| `--count` | 统计表中的条目数 |
-| `--search` | 搜索数据库名、表名或列名 |
-| `--sql-query=<QUERY>` / `--sql-shell` | 执行自定义 SQL 查询 / 进入交互式 SQL shell（依赖堆叠查询支持） |
+| 选项                                     | 作用                                       |
+| -------------------------------------- | ---------------------------------------- |
+| `--dbs`                                | 列出所有数据库                                  |
+| `--tables`                             | 列出指定数据库（配合 `-D`）的表                       |
+| `--columns`                            | 列出指定表（配合 `-D -T`）的列                      |
+| `--dump`                               | 导出指定表或列的数据                               |
+| `-D <DB>` / `-T <TABLE>` / `-C <COLS>` | 指定数据库、表、列                                |
+| `--schema`                             | 枚举完整 schema（所有库、表、列）                     |
+| `--all`                                | 枚举所有可获取的信息                               |
+| `--count`                              | 统计表中的条目数                                 |
+| `--search`                             | 搜索数据库名、表名或列名                             |
+| `--sql-query=<QUERY>` / `--sql-shell`  | 执行自定义 SQL 查询 / 进入交互式 SQL shell（依赖堆叠查询支持） |
 
 ### 2.4 请求与连接调优
 
@@ -117,6 +117,34 @@ sqlmap 是用 Python 编写的开源 SQL 注入自动化工具，核心能力是
 | `--lengths` | 仅通过内容长度比较页面差异 |
 
 > 稳定版（1.10.10）的核心仍是**SQL 注入**；`--nosql`、`--xpath` 等多注入类型能力来自开发分支，尚未进入稳定发布版。
+
+
+```markdown
+操作小案例
+sqlmap -u "<url?id=1>" --technique B --dbs
+
+sqlmap -u "<url?id=1>" --technique B -D test --tables
+
+sqlmap -u "<url?id=1>" --technique B -D test -T flag_table --column
+
+sqlmap -u "<url?id=1>" --technique B -D test -T flag_table -C i_am_flag_column --dump
+```
+
+| 命令                           | 作用        |
+| ---------------------------- | --------- |
+| `--dbs`                      | 列出数据库     |
+| `-D test --tables`           | 列出指定库的表   |
+| `-T flag_table --column`     | 列出指定表的字段  |
+| `-C i_am_flag_column --dump` | 导出指定字段的数据 |
+`--technique B` 用来把注入技术限定为 Boolean-based blind
+
+
+真实报文下状态
+
+| 状态              | 含义        | 数据来源   | 网络请求  | 速度   |
+| --------------- | --------- | ------ | ----- | ---- |
+| **`resumed`**   | **从缓存恢复** | 本地会话文件 | **无** | 极快   |
+| **`retrieved`** | **从目标提取** | 目标数据库  | **有** | 相对较慢 |
 
 ---
 
