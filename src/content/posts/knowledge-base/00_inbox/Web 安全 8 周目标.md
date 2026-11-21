@@ -1,15 +1,15 @@
 ---
-title: "Web 安全 8 周目标"
+title: Web 安全 8 周目标
 published: 2026-09-29
 updated: 2026-10-16
-description: "8 周交付哪几样、怎么算到过，以及 PortSwigger 这条主线怎么走"
+description: 8 周交付哪几样、怎么算到过，以及 PortSwigger 这条主线怎么走
 tags:
-  - "Web安全"
-  - "CTF"
-  - "PortSwigger"
-category: "web"
-slug: "knowledge-base/03_projects/web/web-security-8-weeks"
-draft: false
+  - Web安全
+  - CTF
+  - PortSwigger
+category: web
+slug: knowledge-base/03_projects/web/web-security-8-weeks
+draft: true
 ---
 
 # Web 安全 8 周目标
